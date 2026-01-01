@@ -12,7 +12,7 @@ const server = http.createServer(app);
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://chatsup12.netlify.app/",
+    origin: "https://chatsupkunna.netlify.app",
     credentials: true,
   })
 );
@@ -31,7 +31,7 @@ app.use("/api/v1/match", require("./routes/match.routes"));
 
 const io = new Server(server, {
   cors: {
-    origin: "https://chatsup12.netlify.app/",
+    origin: "https://chatsupkunna.netlify.app",
     credentials: true,
   },
 });
