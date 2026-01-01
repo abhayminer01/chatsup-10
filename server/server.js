@@ -12,7 +12,7 @@ const server = http.createServer(app);
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://chatsup-10-57c2lxz7x-abhayminers-projects.vercel.app",
     credentials: true,
   })
 );
@@ -31,7 +31,7 @@ app.use("/api/v1/match", require("./routes/match.routes"));
 
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: "https://chatsup-10-57c2lxz7x-abhayminers-projects.vercel.app",
     credentials: true,
   },
 });
